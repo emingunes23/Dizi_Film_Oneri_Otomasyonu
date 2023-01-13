@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7DD9BBE-A03F-4714-AD5A-0D94094B674B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ntp_Proje</RootNamespace>
+    <AssemblyName>Ntp Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BenzerDizi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenzerDizi.Designer.cs">
+      <DependentUpon>BenzerDizi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BenzerFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenzerFilm.Designer.cs">
+      <DependentUpon>BenzerFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiziKaydetme.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FilmKaydetme.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisSayfasi.Designer.cs">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiziFilmSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiziFilmSayfası.Designer.cs">
+      <DependentUpon>DiziFilmSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciKaydetme.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciKayit.Designer.cs">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuncellemeDiziFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuncellemeDiziFilm.Designer.cs">
+      <DependentUpon>GuncellemeDiziFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuncellemeFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuncellemeFilm.Designer.cs">
+      <DependentUpon>GuncellemeFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuncellemeDizi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuncellemeDizi.Designer.cs">
+      <DependentUpon>GuncellemeDizi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmSayfasi.Designer.cs">
+      <DependentUpon>FilmSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiziSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiziSayfasi.Designer.cs">
+      <DependentUpon>DiziSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ntp_ProjeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ntp_ProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="BenzerDizi.resx">
+      <DependentUpon>BenzerDizi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BenzerFilm.resx">
+      <DependentUpon>BenzerFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisSayfasi.resx">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiziFilmSayfası.resx">
+      <DependentUpon>DiziFilmSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciKayit.resx">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuncellemeDiziFilm.resx">
+      <DependentUpon>GuncellemeDiziFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuncellemeFilm.resx">
+      <DependentUpon>GuncellemeFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuncellemeDizi.resx">
+      <DependentUpon>GuncellemeDizi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmSayfasi.resx">
+      <DependentUpon>FilmSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiziSayfasi.resx">
+      <DependentUpon>DiziSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet1.xsc">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet1.xss">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsc">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet2.xss">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsc">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet3.xss">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsc">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet4.xss">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsc">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet5.xss">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="Ntp_ProjeDataSet.xsc">
+      <DependentUpon>Ntp_ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ntp_ProjeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ntp_ProjeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ntp_ProjeDataSet.xss">
+      <DependentUpon>Ntp_ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D-glass-film-reel-reels-light-lighting-5252-wallhere.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5480605-mr-robot-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5480605-mr-robot-wallpapers1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pattern-g6c16ef191_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-774364.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\295128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin girişi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\üye girişi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeni üye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-1575100915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movies-folder-icon-17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dce38iv-c126dcac-1629-4a7b-b410-4eb8546227a7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sssssss-aaaaaaaaaaa-ddddddddd-fffffffff-rrrrrrr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\238-2381122_south-park-bigger-longer-and-uncut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_darth-vader-vs-obi-wan-kenobi-hd-cool-star-wars_1920x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3840x2160-Walter-White-de-Breaking-Bad-Wallpaper-4K-Ultra-HD-scaled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d8pog5j-8db3d739-4a41-44e3-a795-9b38b6699f70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dc1tca9-549e1c67-018c-470a-8b06-5ebe57a0f4b8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peaky_blinders__tv_series_folder_icon_v1_by_dyiddo_d81gsbw-fullview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e43d969b4b8fcbc06008b65f9673d339--peaky-blinders-cillian-murphy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daqmoe5-c62643ef-b1fb-4902-a73f-c943ae7b3008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\büyüteç.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e1871.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inception_movie_folder_icon512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drama-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horror-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comedy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-marvel-fantastic-four-folder-icon-fantasticfour2015-a-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-dirili-erturul-folder-icon-diriliş-ertuğrul-folder-icon-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dcsmdet-8ec68ab0-d6ca-42f6-9892-87a7853fbe50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-sherlock-folder-icons-sherlock-smart-folder-3-19-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\better_call_saul_tv_series_folder_icon_2015512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c26ccec90ab5e119b194beb064a6a9d--sherlock-poster-watch-sherlock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d8rlcey-401beb09-fd16-4f42-a244-8102a9a51743.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dcdzkdg-e061dea3-4d75-4337-80c7-86e542f93c1e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d9uy35a-a6002dca-6fe4-45b4-a2b3-5912bb8c88b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db2xnsv-4198b89d-cf4e-485b-91b3-5d253df7f41b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db5rc4u-652afe47-3780-4387-ac69-c461ac854099.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d9wp3ib-52ee4eae-aa31-4b9d-824b-d4a0c22eece9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1063694018-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-arrow-symbol-computer-icons-back-angle-rectangle-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milky-way-2750627_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wkiSLTZq3Jw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1221025677-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e27c8735da98ec6ccdcf12e258b26475.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milky-way-2695569__480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv-series-4k-peaky-blinders-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1221025677-170667a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azvector181100097.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2951281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d0932b3ed34581f4f811626a242c4ce3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e27c8735da98ec6ccdcf12e258b264751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\138659.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1221025677-170667a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220-2205714_get-the-latest-movies-data-src-kodi-tv1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

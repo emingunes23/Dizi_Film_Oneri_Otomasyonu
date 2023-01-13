@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Drama-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drama-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d8rlcey-401beb09-fd16-4f42-a244-8102a9a51743" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d8rlcey-401beb09-fd16-4f42-a244-8102a9a51743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d8pog5j-8db3d739-4a41-44e3-a795-9b38b6699f70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d8pog5j-8db3d739-4a41-44e3-a795-9b38b6699f70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1063694018-170667a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1063694018-170667a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b721" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b721.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1221025677-170667a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1221025677-170667a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milky-way-2695569__480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milky-way-2695569__480.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tv-series-4k-peaky-blinders-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tv-series-4k-peaky-blinders-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peaky_blinders__tv_series_folder_icon_v1_by_dyiddo_d81gsbw-fullview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peaky_blinders__tv_series_folder_icon_v1_by_dyiddo_d81gsbw-fullview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-clipart-arrow-symbol-computer-icons-back-angle-rectangle-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-arrow-symbol-computer-icons-back-angle-rectangle-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="büyüteç" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\büyüteç.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e43d969b4b8fcbc06008b65f9673d339--peaky-blinders-cillian-murphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e43d969b4b8fcbc06008b65f9673d339--peaky-blinders-cillian-murphy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dcdzkdg-e061dea3-4d75-4337-80c7-86e542f93c1e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dcdzkdg-e061dea3-4d75-4337-80c7-86e542f93c1e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpapersden.com_darth-vader-vs-obi-wan-kenobi-hd-cool-star-wars_1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpapersden.com_darth-vader-vs-obi-wan-kenobi-hd-cool-star-wars_1920x1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-clipart-marvel-fantastic-four-folder-icon-fantasticfour2015-a-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-marvel-fantastic-four-folder-icon-fantasticfour2015-a-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azvector181100097" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azvector181100097.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e27c8735da98ec6ccdcf12e258b26475" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e27c8735da98ec6ccdcf12e258b26475.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db2xnsv-4198b89d-cf4e-485b-91b3-5d253df7f41b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db2xnsv-4198b89d-cf4e-485b-91b3-5d253df7f41b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1221025677-170667a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1221025677-170667a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d9wp3ib-52ee4eae-aa31-4b9d-824b-d4a0c22eece9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d9wp3ib-52ee4eae-aa31-4b9d-824b-d4a0c22eece9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3840x2160-Walter-White-de-Breaking-Bad-Wallpaper-4K-Ultra-HD-scaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3840x2160-Walter-White-de-Breaking-Bad-Wallpaper-4K-Ultra-HD-scaled.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1221025677-170667a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1221025677-170667a2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db5rc4u-652afe47-3780-4387-ac69-c461ac854099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db5rc4u-652afe47-3780-4387-ac69-c461ac854099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5480605-mr-robot-wallpapers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5480605-mr-robot-wallpapers1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d66qy9l-3cdd9fd2-64b9-4fee-96de-d3400927d4d11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3D-glass-film-reel-reels-light-lighting-5252-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3D-glass-film-reel-reels-light-lighting-5252-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dce38iv-c126dcac-1629-4a7b-b410-4eb8546227a7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dce38iv-c126dcac-1629-4a7b-b410-4eb8546227a7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milky-way-2750627_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milky-way-2750627_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009151.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dcsmdet-8ec68ab0-d6ca-42f6-9892-87a7853fbe50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dcsmdet-8ec68ab0-d6ca-42f6-9892-87a7853fbe50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sssssss-aaaaaaaaaaa-ddddddddd-fffffffff-rrrrrrr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sssssss-aaaaaaaaaaa-ddddddddd-fffffffff-rrrrrrr.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daqmoe5-c62643ef-b1fb-4902-a73f-c943ae7b3008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daqmoe5-c62643ef-b1fb-4902-a73f-c943ae7b3008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d9uy35a-a6002dca-6fe4-45b4-a2b3-5912bb8c88b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d9uy35a-a6002dca-6fe4-45b4-a2b3-5912bb8c88b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pattern-g6c16ef191_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pattern-g6c16ef191_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-clipart-sherlock-folder-icons-sherlock-smart-folder-3-19-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-sherlock-folder-icons-sherlock-smart-folder-3-19-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-1575100915" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-1575100915.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="üye girişi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\üye girişi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2951281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2951281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="295128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\295128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dedtfe8-49af03a6-6155-44b0-a3ec-951c77e10b72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Admin girişi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admin girişi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yeni üye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yeni üye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d0932b3ed34581f4f811626a242c4ce3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d0932b3ed34581f4f811626a242c4ce3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dddd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="138659" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\138659.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-clipart-dirili-erturul-folder-icon-diriliş-ertuğrul-folder-icon-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-dirili-erturul-folder-icon-diriliş-ertuğrul-folder-icon-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="220-2205714_get-the-latest-movies-data-src-kodi-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e1871" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ddk4xh6-959a50f6-9ece-4a0e-8ea3-7c32c423e1871.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dc1tca9-549e1c67-018c-470a-8b06-5ebe57a0f4b8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dc1tca9-549e1c67-018c-470a-8b06-5ebe57a0f4b8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2c26ccec90ab5e119b194beb064a6a9d--sherlock-poster-watch-sherlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2c26ccec90ab5e119b194beb064a6a9d--sherlock-poster-watch-sherlock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turkiyede-cekilecek-yabanci-dizi-ve-filmlere-tesvik-verilecek-15751009152.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giriş" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giriş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="238-2381122_south-park-bigger-longer-and-uncut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\238-2381122_south-park-bigger-longer-and-uncut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5480605-mr-robot-wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5480605-mr-robot-wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="better_call_saul_tv_series_folder_icon_2015512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\better_call_saul_tv_series_folder_icon_2015512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inception_movie_folder_icon512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inception_movie_folder_icon512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Animation-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Animation-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Horror-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Horror-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comedy-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Comedy-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thumb-1920-774364" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thumb-1920-774364.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movies-folder-icon-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movies-folder-icon-17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wkiSLTZq3Jw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wkiSLTZq3Jw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e27c8735da98ec6ccdcf12e258b264751" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e27c8735da98ec6ccdcf12e258b264751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="220-2205714_get-the-latest-movies-data-src-kodi-tv1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\220-2205714_get-the-latest-movies-data-src-kodi-tv1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.DiziKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="DiziKaydetme">
+          <Key>
+            <PropertyRef Name="Diziid" />
+          </Key>
+          <Property Name="Diziid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiziAdi" Type="varchar" MaxLength="25" />
+          <Property Name="DiziTuru" Type="varchar" MaxLength="20" />
+          <Property Name="DiziYonetmen" Type="varchar" MaxLength="25" />
+          <Property Name="Diziimdb" Type="varchar" MaxLength="5" />
+          <Property Name="DiziSezonSayisi" Type="varchar" MaxLength="2" />
+          <Property Name="DiziTarzi" Type="varchar" MaxLength="15" />
+          <Property Name="DiziYili" Type="char" MaxLength="4" />
+          <Property Name="DiziFilitreleme" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.FilmKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="FilmKaydetme">
+          <Key>
+            <PropertyRef Name="Filmid" />
+          </Key>
+          <Property Name="Filmid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilmAdi" Type="varchar" MaxLength="25" />
+          <Property Name="FilmTuru" Type="varchar" MaxLength="25" />
+          <Property Name="FilmYonetmen" Type="varchar" MaxLength="20" />
+          <Property Name="Filmimdb" Type="varchar" MaxLength="5" />
+          <Property Name="FilmSeriSayisi" Type="varchar" MaxLength="2" />
+          <Property Name="FilmTarzi" Type="varchar" MaxLength="25" />
+          <Property Name="FilmYili" Type="varchar" MaxLength="4" />
+          <Property Name="FilmFilitreleme" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.KullaniciKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="KullaniciKaydetme">
+          <Key>
+            <PropertyRef Name="Kullaniciid" />
+          </Key>
+          <Property Name="Kullaniciid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="varchar" MaxLength="25" />
+          <Property Name="KullaniciSifre" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="DiziKaydetme" EntityType="Self.DiziKaydetme" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [DiziKaydetme].[Diziid] AS [Diziid], 
+    [DiziKaydetme].[DiziAdi] AS [DiziAdi], 
+    [DiziKaydetme].[DiziTuru] AS [DiziTuru], 
+    [DiziKaydetme].[DiziYonetmen] AS [DiziYonetmen], 
+    [DiziKaydetme].[Diziimdb] AS [Diziimdb], 
+    [DiziKaydetme].[DiziSezonSayisi] AS [DiziSezonSayisi], 
+    [DiziKaydetme].[DiziTarzi] AS [DiziTarzi], 
+    [DiziKaydetme].[DiziYili] AS [DiziYili], 
+    [DiziKaydetme].[DiziFilitreleme] AS [DiziFilitreleme]
+    FROM [dbo].[DiziKaydetme] AS [DiziKaydetme]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="FilmKaydetme" EntityType="Self.FilmKaydetme" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [FilmKaydetme].[Filmid] AS [Filmid], 
+    [FilmKaydetme].[FilmAdi] AS [FilmAdi], 
+    [FilmKaydetme].[FilmTuru] AS [FilmTuru], 
+    [FilmKaydetme].[FilmYonetmen] AS [FilmYonetmen], 
+    [FilmKaydetme].[Filmimdb] AS [Filmimdb], 
+    [FilmKaydetme].[FilmSeriSayisi] AS [FilmSeriSayisi], 
+    [FilmKaydetme].[FilmTarzi] AS [FilmTarzi], 
+    [FilmKaydetme].[FilmYili] AS [FilmYili], 
+    [FilmKaydetme].[FilmFilitreleme] AS [FilmFilitreleme]
+    FROM [dbo].[FilmKaydetme] AS [FilmKaydetme]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="KullaniciKaydetme" EntityType="Self.KullaniciKaydetme" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [KullaniciKaydetme].[Kullaniciid] AS [Kullaniciid], 
+    [KullaniciKaydetme].[KullaniciAdi] AS [KullaniciAdi], 
+    [KullaniciKaydetme].[KullaniciSifre] AS [KullaniciSifre]
+    FROM [dbo].[KullaniciKaydetme] AS [KullaniciKaydetme]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DiziKaydetme">
+          <Key>
+            <PropertyRef Name="Diziid" />
+          </Key>
+          <Property Name="Diziid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiziAdi" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="DiziTuru" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DiziYonetmen" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Diziimdb" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="DiziSezonSayisi" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="DiziTarzi" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="DiziYili" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="DiziFilitreleme" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FilmKaydetme">
+          <Key>
+            <PropertyRef Name="Filmid" />
+          </Key>
+          <Property Name="Filmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilmAdi" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="FilmTuru" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="FilmYonetmen" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Filmimdb" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="FilmSeriSayisi" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="FilmTarzi" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="FilmYili" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="FilmFilitreleme" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="KullaniciKaydetme">
+          <Key>
+            <PropertyRef Name="Kullaniciid" />
+          </Key>
+          <Property Name="Kullaniciid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="KullaniciSifre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Ntp_ProjeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DiziKaydetme" EntityType="Self.DiziKaydetme" />
+          <EntitySet Name="FilmKaydetme" EntityType="Self.FilmKaydetme" />
+          <EntitySet Name="KullaniciKaydetme" EntityType="Self.KullaniciKaydetme" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Ntp_ProjeEntities">
+          <EntitySetMapping Name="DiziKaydetme">
+            <EntityTypeMapping TypeName="Model.DiziKaydetme">
+              <MappingFragment StoreEntitySet="DiziKaydetme">
+                <ScalarProperty Name="Diziid" ColumnName="Diziid" />
+                <ScalarProperty Name="DiziAdi" ColumnName="DiziAdi" />
+                <ScalarProperty Name="DiziTuru" ColumnName="DiziTuru" />
+                <ScalarProperty Name="DiziYonetmen" ColumnName="DiziYonetmen" />
+                <ScalarProperty Name="Diziimdb" ColumnName="Diziimdb" />
+                <ScalarProperty Name="DiziSezonSayisi" ColumnName="DiziSezonSayisi" />
+                <ScalarProperty Name="DiziTarzi" ColumnName="DiziTarzi" />
+                <ScalarProperty Name="DiziYili" ColumnName="DiziYili" />
+                <ScalarProperty Name="DiziFilitreleme" ColumnName="DiziFilitreleme" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilmKaydetme">
+            <EntityTypeMapping TypeName="Model.FilmKaydetme">
+              <MappingFragment StoreEntitySet="FilmKaydetme">
+                <ScalarProperty Name="Filmid" ColumnName="Filmid" />
+                <ScalarProperty Name="FilmAdi" ColumnName="FilmAdi" />
+                <ScalarProperty Name="FilmTuru" ColumnName="FilmTuru" />
+                <ScalarProperty Name="FilmYonetmen" ColumnName="FilmYonetmen" />
+                <ScalarProperty Name="Filmimdb" ColumnName="Filmimdb" />
+                <ScalarProperty Name="FilmSeriSayisi" ColumnName="FilmSeriSayisi" />
+                <ScalarProperty Name="FilmTarzi" ColumnName="FilmTarzi" />
+                <ScalarProperty Name="FilmYili" ColumnName="FilmYili" />
+                <ScalarProperty Name="FilmFilitreleme" ColumnName="FilmFilitreleme" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KullaniciKaydetme">
+            <EntityTypeMapping TypeName="Model.KullaniciKaydetme">
+              <MappingFragment StoreEntitySet="KullaniciKaydetme">
+                <ScalarProperty Name="Kullaniciid" ColumnName="Kullaniciid" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="KullaniciSifre" ColumnName="KullaniciSifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

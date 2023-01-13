@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.DiziKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DiziKaydetme">
+    <Key>
+      <PropertyRef Name="Diziid" />
+    </Key>
+    <Property Name="Diziid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiziAdi" Type="varchar" MaxLength="25" />
+    <Property Name="DiziTuru" Type="varchar" MaxLength="20" />
+    <Property Name="DiziYonetmen" Type="varchar" MaxLength="25" />
+    <Property Name="Diziimdb" Type="varchar" MaxLength="5" />
+    <Property Name="DiziSezonSayisi" Type="varchar" MaxLength="2" />
+    <Property Name="DiziTarzi" Type="varchar" MaxLength="15" />
+    <Property Name="DiziYili" Type="char" MaxLength="4" />
+    <Property Name="DiziFilitreleme" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.FilmKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FilmKaydetme">
+    <Key>
+      <PropertyRef Name="Filmid" />
+    </Key>
+    <Property Name="Filmid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilmAdi" Type="varchar" MaxLength="25" />
+    <Property Name="FilmTuru" Type="varchar" MaxLength="25" />
+    <Property Name="FilmYonetmen" Type="varchar" MaxLength="20" />
+    <Property Name="Filmimdb" Type="varchar" MaxLength="5" />
+    <Property Name="FilmSeriSayisi" Type="varchar" MaxLength="2" />
+    <Property Name="FilmTarzi" Type="varchar" MaxLength="25" />
+    <Property Name="FilmYili" Type="varchar" MaxLength="4" />
+    <Property Name="FilmFilitreleme" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Ntp Proje.dbo.KullaniciKaydetme' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="KullaniciKaydetme">
+    <Key>
+      <PropertyRef Name="Kullaniciid" />
+    </Key>
+    <Property Name="Kullaniciid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="varchar" MaxLength="25" />
+    <Property Name="KullaniciSifre" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="DiziKaydetme" EntityType="Self.DiziKaydetme" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DiziKaydetme].[Diziid] AS [Diziid], 
+    [DiziKaydetme].[DiziAdi] AS [DiziAdi], 
+    [DiziKaydetme].[DiziTuru] AS [DiziTuru], 
+    [DiziKaydetme].[DiziYonetmen] AS [DiziYonetmen], 
+    [DiziKaydetme].[Diziimdb] AS [Diziimdb], 
+    [DiziKaydetme].[DiziSezonSayisi] AS [DiziSezonSayisi], 
+    [DiziKaydetme].[DiziTarzi] AS [DiziTarzi], 
+    [DiziKaydetme].[DiziYili] AS [DiziYili], 
+    [DiziKaydetme].[DiziFilitreleme] AS [DiziFilitreleme]
+    FROM [dbo].[DiziKaydetme] AS [DiziKaydetme]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FilmKaydetme" EntityType="Self.FilmKaydetme" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FilmKaydetme].[Filmid] AS [Filmid], 
+    [FilmKaydetme].[FilmAdi] AS [FilmAdi], 
+    [FilmKaydetme].[FilmTuru] AS [FilmTuru], 
+    [FilmKaydetme].[FilmYonetmen] AS [FilmYonetmen], 
+    [FilmKaydetme].[Filmimdb] AS [Filmimdb], 
+    [FilmKaydetme].[FilmSeriSayisi] AS [FilmSeriSayisi], 
+    [FilmKaydetme].[FilmTarzi] AS [FilmTarzi], 
+    [FilmKaydetme].[FilmYili] AS [FilmYili], 
+    [FilmKaydetme].[FilmFilitreleme] AS [FilmFilitreleme]
+    FROM [dbo].[FilmKaydetme] AS [FilmKaydetme]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KullaniciKaydetme" EntityType="Self.KullaniciKaydetme" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KullaniciKaydetme].[Kullaniciid] AS [Kullaniciid], 
+    [KullaniciKaydetme].[KullaniciAdi] AS [KullaniciAdi], 
+    [KullaniciKaydetme].[KullaniciSifre] AS [KullaniciSifre]
+    FROM [dbo].[KullaniciKaydetme] AS [KullaniciKaydetme]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

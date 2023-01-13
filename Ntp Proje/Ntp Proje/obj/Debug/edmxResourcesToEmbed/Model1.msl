@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Ntp_ProjeEntities">
+    <EntitySetMapping Name="DiziKaydetme">
+      <EntityTypeMapping TypeName="Model.DiziKaydetme">
+        <MappingFragment StoreEntitySet="DiziKaydetme">
+          <ScalarProperty Name="Diziid" ColumnName="Diziid" />
+          <ScalarProperty Name="DiziAdi" ColumnName="DiziAdi" />
+          <ScalarProperty Name="DiziTuru" ColumnName="DiziTuru" />
+          <ScalarProperty Name="DiziYonetmen" ColumnName="DiziYonetmen" />
+          <ScalarProperty Name="Diziimdb" ColumnName="Diziimdb" />
+          <ScalarProperty Name="DiziSezonSayisi" ColumnName="DiziSezonSayisi" />
+          <ScalarProperty Name="DiziTarzi" ColumnName="DiziTarzi" />
+          <ScalarProperty Name="DiziYili" ColumnName="DiziYili" />
+          <ScalarProperty Name="DiziFilitreleme" ColumnName="DiziFilitreleme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilmKaydetme">
+      <EntityTypeMapping TypeName="Model.FilmKaydetme">
+        <MappingFragment StoreEntitySet="FilmKaydetme">
+          <ScalarProperty Name="Filmid" ColumnName="Filmid" />
+          <ScalarProperty Name="FilmAdi" ColumnName="FilmAdi" />
+          <ScalarProperty Name="FilmTuru" ColumnName="FilmTuru" />
+          <ScalarProperty Name="FilmYonetmen" ColumnName="FilmYonetmen" />
+          <ScalarProperty Name="Filmimdb" ColumnName="Filmimdb" />
+          <ScalarProperty Name="FilmSeriSayisi" ColumnName="FilmSeriSayisi" />
+          <ScalarProperty Name="FilmTarzi" ColumnName="FilmTarzi" />
+          <ScalarProperty Name="FilmYili" ColumnName="FilmYili" />
+          <ScalarProperty Name="FilmFilitreleme" ColumnName="FilmFilitreleme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KullaniciKaydetme">
+      <EntityTypeMapping TypeName="Model.KullaniciKaydetme">
+        <MappingFragment StoreEntitySet="KullaniciKaydetme">
+          <ScalarProperty Name="Kullaniciid" ColumnName="Kullaniciid" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="KullaniciSifre" ColumnName="KullaniciSifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

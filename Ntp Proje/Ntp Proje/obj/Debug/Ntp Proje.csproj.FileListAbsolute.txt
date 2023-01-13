@@ -1,0 +1,31 @@
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Ntp Proje.exe.config
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Ntp Proje.exe
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Ntp Proje.pdb
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.csproj.AssemblyReference.cache
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.csproj.SuggestedBindingRedirects.cache
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.Properties.Resources.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.csproj.GenerateResource.cache
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.csproj.CoreCompileInputs.cache
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.exe
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.pdb
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.GirisSayfasi.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.DiziFilmSayfası.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.KullaniciKayit.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.AdminGiris.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.KullaniciGiris.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.GuncellemeDiziFilm.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.GuncellemeFilm.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.GuncellemeDizi.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.FilmSayfasi.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.DiziSayfasi.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.BenzerDizi.resources
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp_Proje.BenzerFilm.resources
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Database.mdf
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Database_log.ldf
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\EntityFramework.dll
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\EntityFramework.SqlServer.dll
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\EntityFramework.xml
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\EntityFramework.SqlServer.xml
+C:\C#\Ntp Proje\Ntp Proje\obj\Debug\Ntp Proje.csproj.CopyComplete
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Database1.mdf
+C:\C#\Ntp Proje\Ntp Proje\bin\Debug\Database1_log.ldf
